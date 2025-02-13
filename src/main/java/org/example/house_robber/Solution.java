@@ -1,4 +1,4 @@
-package org.example.House_Robber;
+package org.example.house_robber;
 
 public class Solution {
     public int rob(int[] nums) {
