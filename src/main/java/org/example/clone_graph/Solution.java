@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    static class Node {
+    class Node {
         public int val;
         public List<Node> neighbors;
 
