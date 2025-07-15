@@ -2,25 +2,16 @@ package org.example.longest_common_prefix;
 
 public class Solution {
     public String longestCommonPrefix(String[] strs) {
-        String longestCommonPrefix = "";
-        if(strs == null || strs.length == 0){
-            return longestCommonPrefix;
-        }
 
-        int index = 0;
+        String pre = strs[0];
 
-        for(char c: strs[0].toCharArray()){
-            for(int i = 1; i<strs.length; i++){
-                if(index>=strs[i].length() || c != strs[i].charAt(index)){
-                    return longestCommonPrefix;
-                }
+        for(int i = 1; i<strs.length; i++) {
+            while(!strs[i].startsWith(pre)) {
+                pre = pre.substring(0, pre.length()-1);
+                if(pre.isEmpty()) return "";
             }
-
-            longestCommonPrefix += c;
-            index++;
         }
-        return longestCommonPrefix;
 
-
+        return pre;
     }
 }
