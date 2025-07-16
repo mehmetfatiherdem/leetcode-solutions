@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Solution {
     public List<String> letterCombinations(String digits) {
-        if(digits.equals("")) return new ArrayList<String>();
+        if(digits.isEmpty()) return new ArrayList<>();
         List<String> li = new ArrayList<>();
         backtrack(li, digits, new StringBuilder(), 0);
         return li;
