@@ -5,7 +5,7 @@ public class Solution {
         if(num == 0) return "0";
         StringBuilder sb = new StringBuilder();
         int t = num;
-        int r = 1;
+        int r;
         if(num<0) t = t*(-1);
         while(t > 0) {
             r = t%7;
