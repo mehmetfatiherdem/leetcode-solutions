@@ -4,8 +4,8 @@ public class Solution {
     public int arrangeCoins(int n) {
         if(n == 1) return 1;
 
-        long sum = 0;
-        long m = 0;
+        long sum;
+        long m;
         long l = 0, r = n;
         while(l<=r) {
             m = l+(r-l)/2;
