@@ -20,7 +20,7 @@ public class Solution {
 
         for (int i = 0; i<cars.length; i++) {
 
-            double arrivalTime = (double)(target - cars[i][0]) / cars[i][1];
+            double arrivalTime = (target - cars[i][0]) / cars[i][1];
             cars[i][1] = arrivalTime;
             //topArrival = i;
             cn++;
