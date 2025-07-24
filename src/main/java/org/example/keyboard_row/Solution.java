@@ -9,6 +9,23 @@ public class Solution {
     public String[] findWords(String[] words) {
         List<String> ws = new ArrayList<>();
 
+        Map<Character, Integer> hm = getCharacterIntegerMap();
+
+        for(String s: words) {
+            boolean isSame = true;
+            int i = hm.get(Character.toLowerCase(s.charAt(0)));
+            for(char c: s.toCharArray()) {
+                if(hm.get(Character.toLowerCase(c)) != i) {
+                    isSame = false;
+                }
+                if(!isSame) break;
+            }
+            if(isSame) ws.add(s);
+        }
+        return ws.toArray(new String[0]);
+    }
+
+    private static Map<Character, Integer> getCharacterIntegerMap() {
         Map<Character, Integer> hm = new HashMap<>();
         hm.put('q', 1);
         hm.put('w', 1);
@@ -36,18 +53,6 @@ public class Solution {
         hm.put('b', 3);
         hm.put('n', 3);
         hm.put('m', 3);
-
-        for(String s: words) {
-            boolean isSame = true;
-            int i = hm.get(Character.toLowerCase(s.charAt(0)));
-            for(char c: s.toCharArray()) {
-                if(hm.get(Character.toLowerCase(c)) != i) {
-                    isSame = false;
-                }
-                if(!isSame) break;
-            }
-            if(isSame) ws.add(s);
-        }
-        return ws.toArray(new String[0]);
+        return hm;
     }
 }
