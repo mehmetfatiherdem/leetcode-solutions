@@ -7,7 +7,8 @@ public class Solution {
         Stack<Integer> stack = new Stack<>();
         int[] days = new int[temperatures.length];
         days[temperatures.length-1] = 0;
-        for(int i = 0; i<temperatures.length; i++) {
+        int i = 0;
+        for(; i<temperatures.length; i++) {
             while(!stack.empty() && temperatures[stack.peek()]<temperatures[i]) {
                 int ind = stack.pop();
                 days[ind] = i-ind;
