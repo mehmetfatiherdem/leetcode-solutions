@@ -25,7 +25,7 @@ public class WordDictionary {
             char c = word.charAt(i);
             if(c == '.') {
                 for(WordDictionary ch: wd.children) {
-                    if(ch != null && ch.search(word.substring(i+1, word.length()))) return true;
+                    if(ch != null && ch.search(word.substring(i+1))) return true;
                 }
                 return false;
             } else if(wd.children[c-'a'] == null) return false;
