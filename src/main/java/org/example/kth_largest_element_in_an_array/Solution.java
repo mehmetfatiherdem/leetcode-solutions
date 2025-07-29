@@ -11,7 +11,8 @@ public class Solution {
         }
 
         int pivot = nums[left];
-        int l = left, h = right;
+        int l = left;
+        int h = right;
 
         while(l<=h) {
             while(l<=h && nums[l]<pivot) l++;
