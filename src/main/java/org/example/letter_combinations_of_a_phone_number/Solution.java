@@ -13,7 +13,7 @@ public class Solution {
 
     public void backtrack(List<String> li, String digits, StringBuilder sb, int i) {
         if(i == digits.length()) {
-            li.add(new String(sb.toString()));
+            li.add(sb.toString());
             return;
         }
 
