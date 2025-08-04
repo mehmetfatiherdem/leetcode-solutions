@@ -17,7 +17,7 @@ public class Solution {
                 }
             }
         }
-        if(sb.length()>0 && sb.charAt(sb.length()-1) == '-') sb.deleteCharAt(sb.length()-1);
+        if(!sb.isEmpty() && sb.charAt(sb.length()-1) == '-') sb.deleteCharAt(sb.length()-1);
         return sb.reverse().toString();
     }
 }
