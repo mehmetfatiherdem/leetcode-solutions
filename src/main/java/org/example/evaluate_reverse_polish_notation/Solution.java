@@ -6,28 +6,32 @@ public class Solution {
     public int evalRPN(String[] tokens) {
         Stack<Integer> st = new Stack<>();
         for(String s: tokens) {
-            if(s.equals("+")) {
-                int op2 = st.pop();
-                int op1 = st.pop();
-                int res = op1+op2;
-                st.push(res);
-            } else if(s.equals("-")) {
-                int op2 = st.pop();
-                int op1 = st.pop();
-                int res = op1-op2;
-                st.push(res);
-            } else if(s.equals("*")) {
-                int op2 = st.pop();
-                int op1 = st.pop();
-                int res = op1*op2;
-                st.push(res);
-            } else if(s.equals("/")) {
-                int op2 = st.pop();
-                int op1 = st.pop();
-                int res = op1/op2;
-                st.push(res);
-            } else {
-                st.push(Integer.parseInt(s));
+            switch (s) {
+                case "+" -> {
+                    int op2 = st.pop();
+                    int op1 = st.pop();
+                    int res = op1 + op2;
+                    st.push(res);
+                }
+                case "-" -> {
+                    int op2 = st.pop();
+                    int op1 = st.pop();
+                    int res = op1 - op2;
+                    st.push(res);
+                }
+                case "*" -> {
+                    int op2 = st.pop();
+                    int op1 = st.pop();
+                    int res = op1 * op2;
+                    st.push(res);
+                }
+                case "/" -> {
+                    int op2 = st.pop();
+                    int op1 = st.pop();
+                    int res = op1 / op2;
+                    st.push(res);
+                }
+                default -> st.push(Integer.parseInt(s));
             }
         }
 
