@@ -3,7 +3,8 @@ package org.example.trapping_rain_water;
 public class Solution {
     public int trap(int[] height) {
         int n = height.length;
-        int lp = 0, rp = n-1;
+        int lp = 0;
+        int rp = n-1;
         int lmax = height[lp], rmax = height[rp];
         int sum = 0;
         while(lp<rp) {
