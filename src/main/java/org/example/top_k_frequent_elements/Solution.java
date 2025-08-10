@@ -12,10 +12,8 @@ public class Solution {
             hm.put(n, hm.getOrDefault(n, 0)+1);
         }
 
-        PriorityQueue<Integer> pq = new PriorityQueue((a, b) -> hm.get(b)-hm.get(a));
-        for(int key: hm.keySet()) {
-            pq.add(key);
-        }
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> hm.get(b)-hm.get(a));
+        pq.addAll(hm.keySet());
 
         int[] ar = new int[k];
         for(int i = 0; i<k; i++) {
