@@ -2,7 +2,9 @@ package org.example.third_maximum_number;
 
 public class Solution {
     public int thirdMax(int[] nums) {
-        Integer max = null, smax = null, tmax = null;
+        Integer max = null;
+        Integer smax = null;
+        Integer tmax = null;
 
         for (Integer n : nums) {
             if (n.equals(max) || n.equals(smax) || n.equals(tmax)) continue;
