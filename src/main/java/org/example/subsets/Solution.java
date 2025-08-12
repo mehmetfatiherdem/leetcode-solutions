@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Solution {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> li = new ArrayList<>();
-        subsets(nums, li, new ArrayList<Integer>(), 0);
+        subsets(nums, li, new ArrayList<>(), 0);
         return li;
     }
 
