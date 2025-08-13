@@ -2,7 +2,9 @@ package org.example.student_attendance_record_i;
 
 public class Solution {
     public boolean checkRecord(String s) {
-        int ac = 0, lc = 0, cc = 0;
+        int ac = 0;
+        int lc = 0;
+        int cc = 0;
         for(char c: s.toCharArray()) {
             if(c == 'A') {
                 ac++;
