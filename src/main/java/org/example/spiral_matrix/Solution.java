@@ -12,7 +12,7 @@ public class Solution {
         Direction currDir = Direction.RIGHT;
         List<Integer> li = new ArrayList<>();
 
-        int cnt = 0, row = 0, col = 0;
+        int row = 0, col = 0;
         while(li.size()<(matrix.length * matrix[0].length)) {
             switch(currDir) {
                 case UP:
