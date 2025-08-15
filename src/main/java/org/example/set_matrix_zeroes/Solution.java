@@ -3,7 +3,6 @@ package org.example.set_matrix_zeroes;
 public class Solution {
     public void setZeroes(int[][] matrix) {
 
-        int rows = matrix.length, cols = matrix[0].length;
         boolean rowZero = false;
 
         for(int i = 0; i<matrix.length; i++) {
