@@ -40,7 +40,7 @@ public class Solution {
 
     public TreeNode deserializer(Queue<String> queue) {
         String str = queue.poll();
-        if(str.equals("#")) return null;
+        if(str != null && str.equals("#")) return null;
         TreeNode node = new TreeNode(Integer.valueOf(str));
         node.left = deserializer(queue);
         node.right = deserializer(queue);
