@@ -41,6 +41,10 @@ public class Solution {
     public TreeNode deserializer(Queue<String> queue) {
         String str = queue.poll();
         if(str != null && str.equals("#")) return null;
+        if(str == null) {
+            System.out.println("str is null");
+            System.exit(0);
+        }
         TreeNode node = new TreeNode(Integer.parseInt(str));
         node.left = deserializer(queue);
         node.right = deserializer(queue);
