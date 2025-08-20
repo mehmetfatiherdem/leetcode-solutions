@@ -1,20 +1,13 @@
 package org.example.serialize_and_deserialize_binary_tree;
 
+import org.example.data_structures.TreeNode;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class Solution {
 
-    class TreeNode {
-        int val;
-        TreeNode right;
-        TreeNode left;
-
-        public TreeNode(int val) {
-            this.val = val;
-        }
-    }
 
     public String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();
