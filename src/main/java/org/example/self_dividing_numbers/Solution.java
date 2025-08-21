@@ -7,7 +7,6 @@ public class Solution {
     public List<Integer> selfDividingNumbers(int left, int right) {
         List<Integer> li = new ArrayList<>();
 
-        int msd = 0;
         while(left<=right) {
             int tl = left;
             if(dv(left)) li.add(left);
