@@ -8,7 +8,7 @@ public class Solution {
             return 0;
         }
 
-        HashMap<Character, Integer> rome = new HashMap<Character, Integer>();
+        HashMap<Character, Integer> rome = new HashMap<>();
         rome.put('I', 1);
         rome.put('V', 5);
         rome.put('X', 10);
