@@ -7,9 +7,9 @@ public class Solution {
         if(r == mat.length && c == mat[0].length) return mat;
         int[][] res = new int[r][c];
         int cn = 0;
-        for(int i = 0; i<mat.length; i++) {
-            for(int j = 0; j<mat[i].length; j++) {
-                res[cn/c][cn%c] = mat[i][j];
+        for (int[] ints : mat) {
+            for (int j = 0; j < ints.length; j++) {
+                res[cn / c][cn % c] = ints[j];
                 cn++;
             }
         }
