@@ -8,8 +8,8 @@ public class Solution {
         int[][] res = new int[r][c];
         int cn = 0;
         for (int[] ints : mat) {
-            for (int j = 0; j < ints.length; j++) {
-                res[cn / c][cn % c] = ints[j];
+            for (int anInt : ints) {
+                res[cn / c][cn % c] = anInt;
                 cn++;
             }
         }
