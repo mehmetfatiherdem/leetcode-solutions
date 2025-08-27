@@ -8,9 +8,7 @@ public class Solution {
             if(slen%i == 0) {
                 String t = s.substring(0, i);
                 StringBuilder r = new StringBuilder();
-                for(int j = 0; j < slen/i; j++) {
-                    r.append(t);
-                }
+                r.append(t.repeat(slen / i));
                 if(s.equals(r.toString())) return true;
             }
         }
