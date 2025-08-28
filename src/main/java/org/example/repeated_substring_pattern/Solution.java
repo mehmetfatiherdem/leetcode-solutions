@@ -9,7 +9,7 @@ public class Solution {
                 String t = s.substring(0, i);
                 StringBuilder r = new StringBuilder();
                 r.append(t.repeat(slen / i));
-                if(s.equals(r.toString())) return true;
+                if(s.contentEquals(r)) return true;
             }
         }
 
