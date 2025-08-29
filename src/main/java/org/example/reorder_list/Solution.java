@@ -2,7 +2,6 @@ package org.example.reorder_list;
 
 public class Solution {
     class ListNode {
-        int val;
         ListNode next;
     }
     public void reorderList(ListNode head) {
