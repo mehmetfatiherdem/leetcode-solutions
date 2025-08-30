@@ -1,9 +1,9 @@
 package org.example.reorder_list;
 
+import org.example.data_structures.ListNode;
+
 public class Solution {
-    class ListNode {
-        ListNode next;
-    }
+
     public void reorderList(ListNode head) {
         if(head.next == null) return;
 
