@@ -28,11 +28,14 @@ public class Solution {
         sec = node;
 
         while(sec != null) {
-            ListNode t1 = fi.next, t2 = sec.next;
-            fi.next = sec;
-            sec.next = t1;
-            fi = t1;
-            sec = t2;
+            if(fi != null) {
+                ListNode t1 = fi.next, t2 = sec.next;
+                fi.next = sec;
+                sec.next = t1;
+                fi = t1;
+                sec = t2;
+            }
+
         }
 
     }
