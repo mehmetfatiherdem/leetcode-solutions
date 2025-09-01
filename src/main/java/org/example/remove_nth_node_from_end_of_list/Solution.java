@@ -6,7 +6,6 @@ import java.util.List;
 public class Solution {
     class ListNode {
         ListNode next;
-        int val;
     }
     public ListNode removeNthFromEnd(ListNode head, int n) {
         List<ListNode> li = new ArrayList<>();
