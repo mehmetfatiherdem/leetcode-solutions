@@ -1,12 +1,12 @@
 package org.example.remove_nth_node_from_end_of_list;
 
+import org.example.data_structures.ListNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    class ListNode {
-        ListNode next;
-    }
+
     public ListNode removeNthFromEnd(ListNode head, int n) {
         List<ListNode> li = new ArrayList<>();
         while(head != null) {
