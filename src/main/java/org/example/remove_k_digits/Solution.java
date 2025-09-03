@@ -5,7 +5,7 @@ import java.util.Stack;
 public class Solution {
     public String removeKdigits(String num, int k) {
         int slen = num.length();
-        Stack<Character> s = new Stack<Character>();
+        Stack<Character> s = new Stack<>();
         StringBuilder sb = new StringBuilder();
         for(int i = 0; i<slen; i++) {
             char c = num.charAt(i);
