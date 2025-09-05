@@ -29,6 +29,6 @@ public class Solution {
         sb.reverse();
 
         while(!sb.isEmpty() && sb.charAt(0)=='0') sb.deleteCharAt(0);
-        return sb.length() > 0 ? sb.toString() : "0";
+        return !sb.isEmpty() ? sb.toString() : "0";
     }
 }
