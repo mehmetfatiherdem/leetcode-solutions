@@ -4,9 +4,9 @@ public class Solution {
     public int maxCount(int m, int n, int[][] ops) {
         int r = m, c = n;
 
-        for(int i = 0; i<ops.length; i++) {
-            r = Math.min(r, ops[i][0]);
-            c = Math.min(c, ops[i][1]);
+        for (int[] op : ops) {
+            r = Math.min(r, op[0]);
+            c = Math.min(c, op[1]);
         }
 
         return r*c;
