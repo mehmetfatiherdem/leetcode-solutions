@@ -2,7 +2,8 @@ package org.example.range_addition_ii;
 
 public class Solution {
     public int maxCount(int m, int n, int[][] ops) {
-        int r = m, c = n;
+        int r = m;
+        int c = n;
 
         for (int[] op : ops) {
             r = Math.min(r, op[0]);
