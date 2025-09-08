@@ -14,9 +14,9 @@ public class Solution {
         if (tempList.size() == nums.length) {
             list.add(new ArrayList<>(tempList));
         } else {
-            for (int i = 0; i < nums.length; i++) {
-                if(tempList.contains(nums[i])) continue;
-                tempList.add(nums[i]);
+            for (int num : nums) {
+                if (tempList.contains(num)) continue;
+                tempList.add(num);
                 backtrack(list, tempList, nums);
                 tempList.remove(tempList.size() - 1);
             }
