@@ -13,7 +13,6 @@ public class Solution {
     public void backtrack(List<List<String>> list, List<String> tempList, int start, String s) {
         if(start == s.length()) {
             list.add(new ArrayList<>(tempList));
-            return;
         } else {
             for(int i = start; i<s.length(); i++) {
                 if(isPalindrome(s, start, i)) {
