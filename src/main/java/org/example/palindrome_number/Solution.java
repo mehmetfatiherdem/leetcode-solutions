@@ -14,9 +14,6 @@ public class Solution {
             pal = (pal*10) + (num%10);
             num = num/10;
         }
-        if(pal != x){
-            return false;
-        }
-        return true;
+        return pal == x;
     }
 }
