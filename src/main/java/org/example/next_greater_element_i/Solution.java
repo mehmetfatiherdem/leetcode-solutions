@@ -12,10 +12,10 @@ public class Solution {
         }
 
         int k = 0;
-        for(int j = 0; j<nums1.length; j++) {
+        for (int i : nums1) {
             int n = -1;
-            for(int l = hm.get(nums1[j]); l<nums2.length; l++) {
-                if(nums2[l] > nums1[j]) {
+            for (int l = hm.get(i); l < nums2.length; l++) {
+                if (nums2[l] > i) {
                     n = nums2[l];
                     break;
                 }
