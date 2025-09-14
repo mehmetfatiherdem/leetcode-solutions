@@ -15,10 +15,6 @@ public class Solution {
             val = _val;
         }
 
-        public Node(int _val, List<Node> _children) {
-            val = _val;
-            children = _children;
-        }
     }
     public List<Integer> preorder(Node root) {
         List<Integer> li = new ArrayList<>();
