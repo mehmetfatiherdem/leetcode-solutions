@@ -8,9 +8,6 @@ public class Solution {
         public int val;
         public List<Node> children;
 
-        public Node() {
-        }
-
     }
     public List<Integer> preorder(Node root) {
         List<Integer> li = new ArrayList<>();
