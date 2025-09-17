@@ -1,15 +1,13 @@
 package org.example.n_ary_tree_preorder_traversal;
 
+import org.example.data_structures.NaryTree;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    class Node {
-        public int val;
-        public List<Node> children;
 
-    }
-    public List<Integer> preorder(Node root) {
+    public List<Integer> preorder(NaryTree root) {
         List<Integer> li = new ArrayList<>();
         if(root == null) return li;
 
@@ -18,10 +16,10 @@ public class Solution {
         return li;
     }
 
-    void po(Node root, List<Integer> li) {
+    void po(NaryTree root, List<Integer> li) {
         if(root == null) return;
         li.add(root.val);
-        for(Node c: root.children) {
+        for(NaryTree c: root.children) {
             po(c, li);
         }
     }
