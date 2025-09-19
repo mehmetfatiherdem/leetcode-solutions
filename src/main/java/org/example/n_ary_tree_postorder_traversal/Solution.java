@@ -10,10 +10,6 @@ public class Solution {
 
         public Node() {}
 
-        public Node(int _val) {
-            val = _val;
-        }
-
     }
     public List<Integer> postorder(Node root) {
         List<Integer> li = new ArrayList<>();
