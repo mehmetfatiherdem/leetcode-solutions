@@ -2,14 +2,11 @@ package org.example.n_ary_tree_postorder_traversal;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.example.data_structures.NaryTree;
 
 public class Solution {
-    class Node {
-        public int val;
-        public List<Node> children;
 
-    }
-    public List<Integer> postorder(Node root) {
+    public List<Integer> postorder(NaryTree root) {
         List<Integer> li = new ArrayList<>();
         if(root == null) return li;
         po(root, li);
@@ -17,10 +14,10 @@ public class Solution {
         return li;
     }
 
-    void po(Node root, List<Integer> li) {
+    void po(NaryTree root, List<Integer> li) {
         if(root == null) return;
 
-        for(Node n: root.children) {
+        for(NaryTree n: root.children) {
             po(n, li);
             li.add(n.val);
         }
