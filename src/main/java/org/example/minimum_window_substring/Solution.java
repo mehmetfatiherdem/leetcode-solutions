@@ -3,7 +3,6 @@ package org.example.minimum_window_substring;
 public class Solution {
     public String minWindow(String s, String t) {
         int m = s.length();
-        int n = t.length();
         int[] freq = new int[128];
         int[] window = new int[128];
         int have = 0, need = 0;
