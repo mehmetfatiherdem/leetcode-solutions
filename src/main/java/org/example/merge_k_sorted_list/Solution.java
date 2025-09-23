@@ -1,13 +1,12 @@
 package org.example.merge_k_sorted_list;
 
+import org.example.data_structures.ListNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    class ListNode {
-        ListNode next;
-        int val;
-    }
+
     public ListNode mergetwo(ListNode l1, ListNode l2) {
         var l = new ListNode();
         var t = l;
