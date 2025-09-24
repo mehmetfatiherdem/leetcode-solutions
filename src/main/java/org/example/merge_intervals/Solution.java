@@ -22,8 +22,6 @@ public class Solution {
             } else {
                 lb = Math.min(prev[0], intervals[i][0]);
                 ub = Math.max(prev[1], intervals[i][1]);
-                arr[0] = lb;
-                arr[1] = ub;
                 prev[0] = lb;
                 prev[1] = ub;
                 i++;
