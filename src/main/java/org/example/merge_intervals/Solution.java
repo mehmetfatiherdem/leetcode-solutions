@@ -12,7 +12,6 @@ public class Solution {
         List<int[]> l = new ArrayList<>();
         int i = 1, n = intervals.length;
         int[] prev = intervals[0];
-        int[] arr = new int[2];
         int lb = 0, ub = 0;
         while(i<n) {
             if(prev[1]<intervals[i][0]) {
