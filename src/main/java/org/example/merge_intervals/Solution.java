@@ -12,7 +12,7 @@ public class Solution {
         List<int[]> l = new ArrayList<>();
         int i = 1, n = intervals.length;
         int[] prev = intervals[0];
-        int lb = 0, ub = 0;
+        int lb = 0, ub;
         while(i<n) {
             if(prev[1]<intervals[i][0]) {
                 l.add(new int[]{prev[0], prev[1]});
