@@ -17,14 +17,13 @@ public class Solution {
             if(prev[1]<intervals[i][0]) {
                 l.add(new int[]{prev[0], prev[1]});
                 prev = intervals[i];
-                i++;
             } else {
                 lb = Math.min(prev[0], intervals[i][0]);
                 ub = Math.max(prev[1], intervals[i][1]);
                 prev[0] = lb;
                 prev[1] = ub;
-                i++;
             }
+            i++;
 
         }
 
