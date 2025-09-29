@@ -16,8 +16,7 @@ public class Solution {
     }
     public int minMeetingRooms(List<Interval> intervals) {
 
-        Collections.sort(intervals,
-                Comparator.comparingInt((Interval i1) -> i1.start));
+        intervals.sort(Comparator.comparingInt((Interval i1) -> i1.start));
 
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         for (Interval interval : intervals) {
