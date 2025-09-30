@@ -1,6 +1,5 @@
 package org.example.meeting_rooms_ii;
 
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
