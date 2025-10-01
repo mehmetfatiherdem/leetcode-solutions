@@ -14,7 +14,7 @@ public class Solution {
       }
     }
     public boolean canAttendMeetings(List<Interval> intervals) {
-        if(intervals.size() == 0) return true;
+        if(intervals.isEmpty()) return true;
         Comparator<Interval> intcom = Comparator.comparingInt((Interval i) -> i.start);
         Collections.sort(intervals, intcom);
         Interval prev = intervals.get(0);
