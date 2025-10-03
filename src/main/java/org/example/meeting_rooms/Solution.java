@@ -2,7 +2,6 @@ package org.example.meeting_rooms;
 
 import java.util.List;
 import java.util.Comparator;
-import java.util.Collections;
 
 public class Solution {
 
