@@ -2,7 +2,8 @@ package org.example.maximum_product_of_three_numbers;
 
 public class Solution {
     public int maximumProduct(int[] nums) {
-        long l1 = Long.MAX_VALUE, l2 = Long.MAX_VALUE;
+        long l1 = Long.MAX_VALUE;
+        long l2 = Long.MAX_VALUE;
         long m1 = Long.MIN_VALUE, m2 = Long.MIN_VALUE, m3 = Long.MIN_VALUE;
 
         for(long n: nums) {
