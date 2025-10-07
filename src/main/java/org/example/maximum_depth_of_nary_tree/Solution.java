@@ -9,10 +9,6 @@ public class Solution {
 
         public Node() {}
 
-        public Node(int _val) {
-            val = _val;
-        }
-
     }
     public int maxDepth(Node root) {
         if(root == null) return 0;
