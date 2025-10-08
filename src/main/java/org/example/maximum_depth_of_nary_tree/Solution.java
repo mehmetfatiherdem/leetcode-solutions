@@ -7,8 +7,6 @@ public class Solution {
         public int val;
         public List<Node> children;
 
-        public Node() {}
-
     }
     public int maxDepth(Node root) {
         if(root == null) return 0;
