@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Solution {
     public int lengthOfLongestSubstring(String s) {
 
-        if(s.length() == 0) return 0;
+        if(s.isEmpty()) return 0;
 
         HashMap<Character, Integer> hm = new HashMap<>(){{
             put(s.charAt(0), 0);
