@@ -7,9 +7,9 @@ public class Solution {
 
         if(s.isEmpty()) return 0;
 
-        HashMap<Character, Integer> hm = new HashMap<>(){{
-            put(s.charAt(0), 0);
-        }};
+        HashMap<Character, Integer> hm = new HashMap<>();
+        hm.put(s.charAt(0), 0);
+
         int beg = 1, end = 1;
         int lmax = 1, l = 1;
 
