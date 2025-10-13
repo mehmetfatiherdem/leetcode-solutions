@@ -10,7 +10,8 @@ public class Solution {
         HashMap<Character, Integer> hm = new HashMap<>();
         hm.put(s.charAt(0), 0);
 
-        int beg = 1, end = 1;
+        int beg = 1;
+        int end = 1;
         int lmax = 1, l = 1;
 
         while(end < s.length()) {
