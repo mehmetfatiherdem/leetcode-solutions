@@ -12,7 +12,8 @@ public class Solution {
 
         int beg = 1;
         int end = 1;
-        int lmax = 1, l = 1;
+        int lmax = 1;
+        int l = 1;
 
         while(end < s.length()) {
             Character c = s.charAt(end);
