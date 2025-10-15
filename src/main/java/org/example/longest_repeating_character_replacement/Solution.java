@@ -6,7 +6,8 @@ import java.util.Map;
 public class Solution {
     public int characterReplacement(String s, int k) {
         Map<Character, Integer> hm = new HashMap<>();
-        int l = 0, maxf = 0, res = 0;
+        int l = 0, maxf = 0;
+        int res = 0;
         for (int r = 0; r<s.length(); r++) {
             hm.put(s.charAt(r), hm.getOrDefault(s.charAt(r), 0) + 1);
             maxf = Math.max(maxf, hm.get(s.charAt(r)));
