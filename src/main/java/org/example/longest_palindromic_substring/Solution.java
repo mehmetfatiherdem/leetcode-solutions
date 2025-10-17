@@ -2,7 +2,7 @@ package org.example.longest_palindromic_substring;
 
 public class Solution {
     public String longestPalindrome(String s) {
-        String st = new String();
+        String st = "";
         int slen = s.length();
         int maxlen = 0;
         for(int i = 0; i<slen; i++) {
