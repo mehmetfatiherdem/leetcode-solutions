@@ -6,7 +6,8 @@ public class Solution {
         int slen = s.length();
         int maxlen = 0;
         for(int i = 0; i<slen; i++) {
-            int l = i, r = i;
+            int l = i;
+            int r = i;
             while(l>=0 && r<slen && s.charAt(l) == s.charAt(r)) {
                 if(r-l+1 > maxlen) {
                     st = s.substring(l, r+1);
