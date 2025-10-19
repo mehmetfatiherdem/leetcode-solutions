@@ -17,8 +17,9 @@ public class Solution {
             return;
         }
 
+        int i1 = ((digits.charAt(i) - '0') - 2) * 3;
         if((digits.charAt(i)-'0')<7) {
-            int x = ((digits.charAt(i)-'0')-2)*3;
+            int x = i1;
 
             sb.append((char)('a'+x));
             backtrack(li, digits, sb, i+1);
@@ -33,7 +34,7 @@ public class Solution {
             sb.deleteCharAt(sb.length()-1);
 
         } else if((digits.charAt(i)-'0')==7) {
-            int x = ((digits.charAt(i)-'0')-2)*3;
+            int x = i1;
 
             sb.append((char)('a'+x));
             backtrack(li, digits, sb, i+1);
