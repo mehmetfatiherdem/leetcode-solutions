@@ -19,17 +19,16 @@ public class Solution {
 
         int i1 = ((digits.charAt(i) - '0') - 2) * 3;
         if((digits.charAt(i)-'0')<7) {
-            int x = i1;
 
-            sb.append((char)('a'+x));
+            sb.append((char)('a'+ i1));
             backtrack(li, digits, sb, i+1);
             sb.deleteCharAt(sb.length()-1);
 
-            sb.append((char)('a'+x+1));
+            sb.append((char)('a'+ i1 +1));
             backtrack(li, digits, sb, i+1);
             sb.deleteCharAt(sb.length()-1);
 
-            sb.append((char)('a'+x+2));
+            sb.append((char)('a'+ i1 +2));
             backtrack(li, digits, sb, i+1);
             sb.deleteCharAt(sb.length()-1);
 
