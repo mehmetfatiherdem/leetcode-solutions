@@ -33,21 +33,20 @@ public class Solution {
             sb.deleteCharAt(sb.length()-1);
 
         } else if((digits.charAt(i)-'0')==7) {
-            int x = i1;
 
-            sb.append((char)('a'+x));
+            sb.append((char)('a'+ i1));
             backtrack(li, digits, sb, i+1);
             sb.deleteCharAt(sb.length()-1);
 
-            sb.append((char)('a'+x+1));
+            sb.append((char)('a'+ i1 +1));
             backtrack(li, digits, sb, i+1);
             sb.deleteCharAt(sb.length()-1);
 
-            sb.append((char)('a'+x+2));
+            sb.append((char)('a'+ i1 +2));
             backtrack(li, digits, sb, i+1);
             sb.deleteCharAt(sb.length()-1);
 
-            sb.append((char)('a'+x+3));
+            sb.append((char)('a'+ i1 +3));
             backtrack(li, digits, sb, i+1);
             sb.deleteCharAt(sb.length()-1);
         } else if((digits.charAt(i)-'0')==8) {
