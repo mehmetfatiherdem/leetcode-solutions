@@ -10,8 +10,7 @@ public class Solution {
             return nums[left];
         }
 
-        int pivot = nums[left];
-        int l = left, h = right;
+        int pivot = nums[left], l = left, h = right;
 
         while(l<=h) {
             while(l<=h && nums[l]<pivot) l++;
