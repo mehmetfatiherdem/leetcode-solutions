@@ -2,7 +2,8 @@ package org.example.koko_eating_bananas;
 
 public class Solution {
     public int minEatingSpeed(int[] piles, int h) {
-        int min = 1, max = piles[0];
+        int min = 1;
+        int max = piles[0];
         for(int num: piles)
             if(num>max) max = num;
         int res = max;
