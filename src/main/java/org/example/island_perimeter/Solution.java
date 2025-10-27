@@ -3,7 +3,8 @@ package org.example.island_perimeter;
 public class Solution {
     public int islandPerimeter(int[][] grid) {
         int[] per = {4, 3, 2, 1, 0};
-        int sum = 0, nc = 0;
+        int sum = 0;
+        int nc = 0;
         for(int i = 0; i<grid.length; i++) {
             for(int j = 0; j<grid[0].length; j++) {
                 if(grid[i][j] == 1) {
