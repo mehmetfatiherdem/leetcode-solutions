@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
-        int l1 = nums1.length, l2 = nums2.length;
+        int l1 = nums1.length;
+        int l2 = nums2.length;
         int i = 0, j = 0;
         int k = 0;
         Arrays.sort(nums1);
