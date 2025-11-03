@@ -7,7 +7,8 @@ public class Solution {
     public int[][] insert(int[][] intervals, int[] newInterval) {
         List<int[]> result = new ArrayList<>();
         int i = 0, n = intervals.length;
-        int ns = newInterval[0], ne = newInterval[1];
+        int ns = newInterval[0];
+        int ne = newInterval[1];
 
         while (i < n && intervals[i][1] < ns) {
             result.add(intervals[i]);
