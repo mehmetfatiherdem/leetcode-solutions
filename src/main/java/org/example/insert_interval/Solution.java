@@ -6,7 +6,8 @@ import java.util.List;
 public class Solution {
     public int[][] insert(int[][] intervals, int[] newInterval) {
         List<int[]> result = new ArrayList<>();
-        int i = 0, n = intervals.length;
+        int i = 0;
+        int n = intervals.length;
         int ns = newInterval[0];
         int ne = newInterval[1];
 
