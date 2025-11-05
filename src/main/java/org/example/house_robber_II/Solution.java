@@ -7,7 +7,8 @@ public class Solution {
     }
 
     public int getMax(int[] nums, int start, int end) {
-        int prevRob = 0, maxRob = 0;
+        int prevRob = 0;
+        int maxRob = 0;
 
         for(int i = start; i <= end; i++) {
             int temp = Math.max(maxRob, prevRob + nums[i]);
