@@ -2,7 +2,8 @@ package org.example.house_robber;
 
 public class Solution {
     public int rob(int[] nums) {
-        int[] dp = new int[nums.length+2];
+        int[] dp;
+        dp = new int[nums.length+2];
 
         for(int i = 0; i<nums.length; i++) {
             int max = 0;
