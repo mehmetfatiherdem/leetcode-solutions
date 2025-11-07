@@ -14,7 +14,9 @@ public class Solution {
         }
         int robm = 0;
         for(int d: dp) {
-            if(d > robm) robm = d;
+            if(d > robm){
+                robm = d;
+            }
         }
 
         return robm;
