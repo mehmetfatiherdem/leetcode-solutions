@@ -13,9 +13,9 @@ public class Solution {
         for(int i = 0; i<n; i++) {
             adj.add(new ArrayList<>());
         }
-        for(int i = 0; i<edges.length; i++) {
-            adj.get(edges[i][0]).add(edges[i][1]);
-            adj.get(edges[i][1]).add(edges[i][0]);
+        for (int[] edge : edges) {
+            adj.get(edge[0]).add(edge[1]);
+            adj.get(edge[1]).add(edge[0]);
         }
 
         if(!dfs(0,0,adj,visited)) return false;
