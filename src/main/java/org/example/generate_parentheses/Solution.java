@@ -5,7 +5,8 @@ import java.util.List;
 
 public class Solution {
     public List<String> generateParenthesis(int n) {
-        List<String> li = new ArrayList<>();
+        List<String> li;
+        li = new ArrayList<>();
         helper(li, "", 0, 0, n);
         return li;
     }
