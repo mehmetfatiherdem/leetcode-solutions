@@ -16,9 +16,8 @@ public class Solution {
             li.add(curr);
             return;
         }
-        if(openN<n) {
-            helper(li, curr + "(", openN+1, closedN, n);
-        }
+        if(openN<n) helper(li, curr + "(", openN+1, closedN, n);
+
         if(openN>closedN) {
             helper(li, curr + ")", openN, closedN+1, n);
         }
