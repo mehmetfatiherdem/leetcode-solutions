@@ -5,10 +5,9 @@ import java.util.List;
 
 public class Solution {
     public List<Integer> findDisappearedNumbers(int[] nums) {
-        int n = nums.length;
         int in;
         List<Integer> list = new ArrayList<>();
-        for(int i = 0; i<n; i++) {
+        for(int i = 0; i<nums.length; i++) {
             if(nums[i] < 0) {
                 in = (nums[i]*(-1)) - 1;
             } else {
@@ -20,7 +19,7 @@ public class Solution {
             }
         }
 
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i < nums.length; i++){
             if(nums[i] > 0){
                 list.add(i+1);
             }
