@@ -6,7 +6,6 @@ public class Solution {
     public int diameterOfBinaryTree(TreeNode root) {
         if(root == null) return -1;
         int[]res = {0};
-        int lh = d(root, res);
 
         return res[0];
     }
