@@ -13,9 +13,8 @@ public class Solution {
             if(Character.isUpperCase(word.charAt(i))) {
                 onlyFirstCap = false;
                 allLow = false;
-            } else {
-                allCap = false;
-            }
+            } else allCap = false;
+
         }
         return allCap || allLow || onlyFirstCap;
     }
