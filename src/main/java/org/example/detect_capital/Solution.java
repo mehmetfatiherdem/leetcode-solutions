@@ -2,7 +2,8 @@ package org.example.detect_capital;
 
 public class Solution {
     public boolean detectCapitalUse(String word) {
-        boolean allCap = false, allLow = true, onlyFirstCap = false;
+        boolean allCap = false, allLow = true;
+        boolean onlyFirstCap = false;
 
         if(Character.isUpperCase(word.charAt(0))) {
             onlyFirstCap = true;
