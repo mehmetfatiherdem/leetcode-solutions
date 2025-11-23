@@ -7,9 +7,8 @@ public class Solution {
         dp[slen] = 1;
 
         for (int i = slen - 1; i >= 0; i--) {
-            if (s.charAt(i) == '0') {
-                dp[i] = 0;
-            } else {
+            if (s.charAt(i) == '0') dp[i] = 0;
+            else {
                 dp[i] = dp[i + 1];
 
                 if (i + 1 < slen &&
