@@ -8,8 +8,8 @@ public class Solution {
         int tlen = temperatures.length;
         int[] days = new int[tlen];
         days[tlen-1] = 0;
-        int i = 0;
-        for(; i<tlen; i++) {
+        int i;
+        for(i = 0; i<tlen; i++) {
             while(!stack.empty() && temperatures[stack.peek()]<temperatures[i]) {
                 int ind = stack.pop();
                 days[ind] = i-ind;
