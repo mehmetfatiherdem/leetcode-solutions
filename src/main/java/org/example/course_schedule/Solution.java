@@ -6,7 +6,7 @@ public class Solution {
     public boolean dfs(int crs, Set<Integer> vs, Map<Integer, List<Integer>> hm) {
         if(vs.contains(crs)) {
             return false;
-        } else if(hm.get(crs).size() == 0) {
+        } else if(hm.get(crs).isEmpty()) {
             return true;
         }
         vs.add(crs);
