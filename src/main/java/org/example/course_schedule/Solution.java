@@ -27,8 +27,8 @@ public class Solution {
             hm.put(i, new ArrayList<>());
         }
 
-        for(int i = 0; i<prerequisites.length; i++) {
-            hm.get(prerequisites[i][0]).add(prerequisites[i][1]);
+        for (int[] prerequisite : prerequisites) {
+            hm.get(prerequisite[0]).add(prerequisite[1]);
         }
 
         Set<Integer> vs = new HashSet<>();
