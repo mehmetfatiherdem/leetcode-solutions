@@ -32,9 +32,8 @@ public class Solution {
 
         Set<Integer> vs = new HashSet<>();
 
-        for(int j = 0; j<numCourses; j++) {
-            if(!dfs(j, vs, hm)) return false;
-        }
+        for(int j = 0; j<numCourses; j++) if(!dfs(j, vs, hm)) return false;
+
 
         return true;
     }
