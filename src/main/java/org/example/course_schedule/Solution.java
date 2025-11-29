@@ -23,9 +23,7 @@ public class Solution {
         if(prerequisites.length == 0) return true;
         Map<Integer, List<Integer>> hm = new HashMap<>();
 
-        for(int i = 0; i<numCourses; i++) {
-            hm.put(i, new ArrayList<>());
-        }
+        for(int i = 0; i<numCourses; i++) hm.put(i, new ArrayList<>());
 
         for (int[] prerequisite : prerequisites) hm.get(prerequisite[0]).add(prerequisite[1]);
 
