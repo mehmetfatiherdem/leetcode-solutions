@@ -6,9 +6,8 @@ public class Solution {
     public boolean dfs(int crs, Set<Integer> vs, Map<Integer, List<Integer>> hm) {
         if(vs.contains(crs)) {
             return false;
-        } else if(hm.get(crs).isEmpty()) {
-            return true;
-        }
+        } else if(hm.get(crs).isEmpty()) return true;
+
         vs.add(crs);
         for(int req: hm.get(crs)) {
             if(!dfs(req, vs, hm)) return false;
@@ -26,7 +25,6 @@ public class Solution {
         for(int i = 0; i<numCourses; i++) hm.put(i, new ArrayList<>());
 
         for (int[] prerequisite : prerequisites) hm.get(prerequisite[0]).add(prerequisite[1]);
-
 
         Set<Integer> vs = new HashSet<>();
 
