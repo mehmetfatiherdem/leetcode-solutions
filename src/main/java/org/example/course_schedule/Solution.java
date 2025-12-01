@@ -9,9 +9,8 @@ public class Solution {
         } else if(hm.get(crs).isEmpty()) return true;
 
         vs.add(crs);
-        for(int req: hm.get(crs)) {
-            if(!dfs(req, vs, hm)) return false;
-        }
+        for(int req: hm.get(crs)) if(!dfs(req, vs, hm)) return false;
+
 
         vs.remove(crs);
         hm.put(crs, new ArrayList<>());
