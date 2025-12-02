@@ -4,13 +4,11 @@ import java.util.*;
 
 public class Solution {
     public boolean dfs(int crs, Set<Integer> vs, Map<Integer, List<Integer>> hm) {
-        if(vs.contains(crs)) {
-            return false;
-        } else if(hm.get(crs).isEmpty()) return true;
+        if(vs.contains(crs)) return false;
+        else if(hm.get(crs).isEmpty()) return true;
 
         vs.add(crs);
         for(int req: hm.get(crs)) if(!dfs(req, vs, hm)) return false;
-
 
         vs.remove(crs);
         hm.put(crs, new ArrayList<>());
@@ -28,7 +26,6 @@ public class Solution {
         Set<Integer> vs = new HashSet<>();
 
         for(int j = 0; j<numCourses; j++) if(!dfs(j, vs, hm)) return false;
-
 
         return true;
     }
