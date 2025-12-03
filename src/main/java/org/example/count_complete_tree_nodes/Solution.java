@@ -1,11 +1,9 @@
 package org.example.count_complete_tree_nodes;
 
+import org.example.data_structures.TreeNode;
+
 public class Solution {
 
-    class TreeNode {
-        TreeNode left;
-        TreeNode right;
-    }
     public int countNodes(TreeNode root) {
         if(root == null) return 0;
 
