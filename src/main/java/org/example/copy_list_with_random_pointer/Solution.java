@@ -31,8 +31,7 @@ public class Solution {
         Node tthead = head;
 
         while(tthead != null) {
-            Node nnn = hm.get(tthead.random);
-            tth.random = nnn;
+            tth.random = hm.get(tthead.random);
             tth = tth.next;
             tthead = tthead.next;
         }
