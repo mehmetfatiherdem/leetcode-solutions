@@ -10,7 +10,7 @@ public class Solution {
             int n = num >> (28-i);
             n = n&m;
             if(n > 0) passz = true;
-            if(!passz && n==0) continue;
+            if(!passz) continue;
             switch (n) {
                 case 0:
                     sb.append(0);
