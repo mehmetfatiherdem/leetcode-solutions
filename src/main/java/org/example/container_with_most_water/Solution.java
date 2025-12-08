@@ -10,10 +10,8 @@ public class Solution {
         while(j > i) {
 
             w = j - i;
-            if(height[i] > height[j]) {
-                h = height[j--];
-            } else h = height[i++];
-
+            if(height[i] > height[j]) h = height[j--];
+            else h = height[i++];
 
             int area = w * h;
             maxArea = Math.max(area, maxArea);
