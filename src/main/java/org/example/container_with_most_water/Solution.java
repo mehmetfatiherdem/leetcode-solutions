@@ -8,7 +8,6 @@ public class Solution {
         int maxArea = 0;
         int w, h;
         while(j > i) {
-
             w = j - i;
             if(height[i] > height[j]) h = height[j--];
             else h = height[i++];
