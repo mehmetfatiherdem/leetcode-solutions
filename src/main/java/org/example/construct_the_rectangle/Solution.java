@@ -6,7 +6,6 @@ public class Solution {
         int w = (int)Math.sqrt(area);
         while(w>=2 && area%w != 0) w--;
 
-
         ar[0] = area/w;
         ar[1] = w;
 
