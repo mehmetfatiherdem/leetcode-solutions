@@ -3,17 +3,10 @@ package org.example.construct_binary_tree_from_preorder_and_inorder_traversal;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.example.data_structures.TreeNode;
+
 public class Solution {
 
-    class TreeNode {
-        int val;
-        TreeNode right;
-        TreeNode left;
-
-        public TreeNode(int val) {
-            this.val = val;
-        }
-    }
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         if (preorder == null || inorder == null || preorder.length != inorder.length) return null;
 
