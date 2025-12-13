@@ -15,11 +15,11 @@ public class Solution {
             hm.put(inorder[i], i);
         }
 
-        return build(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1, hm);
+        return build(preorder, 0, preorder.length - 1, 0, inorder.length - 1, hm);
     }
 
     private TreeNode build(int[] preorder, int preStart, int preEnd,
-                           int[] inorder, int inStart, int inEnd,
+                           int inStart, int inEnd,
                            Map<Integer, Integer> hm) {
         if (preStart > preEnd || inStart > inEnd) return null;
 
@@ -29,9 +29,9 @@ public class Solution {
         int leftSize = mid - inStart;
 
         root.left = build(preorder, preStart + 1, preStart + leftSize,
-                inorder, inStart, mid - 1, hm);
+                inStart, mid - 1, hm);
         root.right = build(preorder, preStart + leftSize + 1, preEnd,
-                inorder, mid + 1, inEnd, hm);
+                mid + 1, inEnd, hm);
 
         return root;
     }
