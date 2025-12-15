@@ -9,7 +9,7 @@ public class Solution {
 
         List<List<Integer>> li = new ArrayList<>();
         Arrays.sort(candidates);
-        cc(candidates, li, new ArrayList<Integer>(), 0, 0, target);
+        cc(candidates, li, new ArrayList<>(), 0, 0, target);
         return li;
 
     }
