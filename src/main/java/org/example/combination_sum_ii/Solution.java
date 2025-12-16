@@ -33,6 +33,5 @@ public class Solution {
             cl.remove(cl.size() - 1);
         }
 
-
     }
 }
