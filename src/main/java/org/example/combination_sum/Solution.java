@@ -16,7 +16,6 @@ public class Solution {
             li.add(new ArrayList<>(cl));
             return;
         }
-
         cl.add(candidates[i]);
         combinationSum(candidates, li, cl, i, currSum + candidates[i], target);
         cl.remove(cl.size()-1);
