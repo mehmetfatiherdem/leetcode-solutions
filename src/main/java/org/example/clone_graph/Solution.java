@@ -12,10 +12,6 @@ public class Solution {
             val = _val;
             neighbors = new ArrayList<>();
         }
-        public Node(int _val, ArrayList<Node> _neighbors) {
-            val = _val;
-            neighbors = _neighbors;
-        }
     }
     public Node cloneGraph(Node node) {
         if(node == null) return null;
