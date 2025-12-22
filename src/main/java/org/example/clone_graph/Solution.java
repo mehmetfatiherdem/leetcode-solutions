@@ -1,32 +1,23 @@
 package org.example.clone_graph;
 
-import java.util.ArrayList;
-import java.util.List;
+import org.example.data_structures.GraphNode;
 
 public class Solution {
-    class Node {
-        public int val;
-        public List<Node> neighbors;
 
-        public Node(int _val) {
-            val = _val;
-            neighbors = new ArrayList<>();
-        }
-    }
-    public Node cloneGraph(Node node) {
+    public GraphNode cloneGraph(GraphNode node) {
         if(node == null) return null;
-        Node copy = new Node(node.val);
-        Node[] visited = new Node[101];
+        GraphNode copy = new GraphNode(node.val);
+        GraphNode[] visited = new GraphNode[101];
         dfs(node, copy, visited);
         return copy;
     }
 
-    public void dfs(Node node , Node copy , Node[] visited){
+    public void dfs(GraphNode node , GraphNode copy , GraphNode[] visited){
         visited[copy.val] = copy;
 
-        for(Node n: node.neighbors) {
+        for(GraphNode n: node.neighbors) {
             if(visited[n.val] == null) {
-                Node nn = new Node(n.val);
+                GraphNode nn = new GraphNode(n.val);
                 copy.neighbors.add(nn);
                 dfs(n, nn, visited);
             } else {
