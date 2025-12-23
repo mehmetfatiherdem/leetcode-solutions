@@ -14,7 +14,6 @@ public class Solution {
 
     public void dfs(GraphNode node , GraphNode copy , GraphNode[] visited){
         visited[copy.val] = copy;
-
         for(GraphNode n: node.neighbors) {
             if(visited[n.val] == null) {
                 GraphNode nn = new GraphNode(n.val);
