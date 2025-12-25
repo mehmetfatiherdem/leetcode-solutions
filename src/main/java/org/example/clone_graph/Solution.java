@@ -19,9 +19,8 @@ public class Solution {
                 GraphNode nn = new GraphNode(n.val);
                 copy.neighbors.add(nn);
                 dfs(n, nn, visited);
-            } else {
-                copy.neighbors.add(visited[n.val]);
-            }
+            } else copy.neighbors.add(visited[n.val]);
+
         }
     }
 }
