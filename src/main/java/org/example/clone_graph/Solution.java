@@ -23,6 +23,5 @@ public class Solution {
                 copy.neighbors.add(visited[n.val]);
             }
         }
-
     }
 }
