@@ -20,7 +20,6 @@ public class Solution {
                 copy.neighbors.add(nn);
                 dfs(n, nn, visited);
             } else copy.neighbors.add(visited[n.val]);
-
         }
     }
 }
