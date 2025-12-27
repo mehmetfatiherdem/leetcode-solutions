@@ -3,7 +3,6 @@ package org.example.clone_graph;
 import org.example.data_structures.GraphNode;
 
 public class Solution {
-
     public GraphNode cloneGraph(GraphNode node) {
         if(node == null) return null;
         GraphNode copy = new GraphNode(node.val);
