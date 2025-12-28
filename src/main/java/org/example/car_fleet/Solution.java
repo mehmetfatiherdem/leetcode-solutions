@@ -31,7 +31,6 @@ public class Solution {
                 topArrival = i;
             }
         }
-
         return cn;
     }
 }
