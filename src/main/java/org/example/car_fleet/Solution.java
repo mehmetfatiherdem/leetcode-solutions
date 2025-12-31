@@ -25,9 +25,8 @@ public class Solution {
             //topArrival = i;
             cn++;
 
-            if (cn >= 2 && cars[topArrival][1] >= cars[i][1]) {
-                cn--;
-            } else if (cn >= 2 && cars[topArrival][1] < cars[i][1]) topArrival = i;
+            if (cn >= 2 && cars[topArrival][1] >= cars[i][1]) cn--;
+            else if (cn >= 2 && cars[topArrival][1] < cars[i][1]) topArrival = i;
         }
         return cn;
     }
