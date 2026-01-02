@@ -22,7 +22,7 @@ public class Solution {
 
             double arrivalTime = (target - cars[i][0]) / cars[i][1];
             cars[i][1] = arrivalTime;
-            //topArrival = i;
+
             cn++;
 
             if (cn >= 2 && cars[topArrival][1] >= cars[i][1]) cn--;
