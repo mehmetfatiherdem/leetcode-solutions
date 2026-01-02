@@ -19,7 +19,6 @@ public class Solution {
         int topArrival = 0;
 
         for (int i = 0; i<cars.length; i++) {
-
             double arrivalTime = (target - cars[i][0]) / cars[i][1];
             cars[i][1] = arrivalTime;
 
