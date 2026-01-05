@@ -21,7 +21,6 @@ public class Solution {
         for (int i = 0; i<cars.length; i++) {
             double arrivalTime = (target - cars[i][0]) / cars[i][1];
             cars[i][1] = arrivalTime;
-
             cn++;
             if (cn >= 2 && cars[topArrival][1] >= cars[i][1]) cn--;
             else if (cn >= 2 && cars[topArrival][1] < cars[i][1]) topArrival = i;
