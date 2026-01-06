@@ -15,7 +15,6 @@ public class Solution {
         Arrays.sort(cars, (a, b) -> Double.compare(b[0], a[0]));
 
         int cn = 0;
-
         int topArrival = 0;
         for (int i = 0; i<cars.length; i++) {
             double arrivalTime = (target - cars[i][0]) / cars[i][1];
