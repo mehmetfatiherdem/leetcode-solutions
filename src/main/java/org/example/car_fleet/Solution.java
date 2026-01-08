@@ -11,7 +11,6 @@ public class Solution {
             cars[i][0] = position[i];
             cars[i][1] = speed[i];
         }
-
         Arrays.sort(cars, (a, b) -> Double.compare(b[0], a[0]));
         int cn = 0;
         int topArrival = 0;
