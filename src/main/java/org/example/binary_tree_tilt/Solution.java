@@ -19,5 +19,4 @@ public class Solution {
         res += Math.abs(lsum - rsum);
         return root.val+lsum+rsum;
     }
-
 }
