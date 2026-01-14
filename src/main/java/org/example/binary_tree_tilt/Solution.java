@@ -16,7 +16,6 @@ public class Solution {
 
         int lsum = f(root.left);
         int rsum = f(root.right);
-
         res += Math.abs(lsum - rsum);
         return root.val+lsum+rsum;
     }
