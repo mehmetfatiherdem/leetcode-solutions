@@ -13,7 +13,6 @@ public class Solution {
 
     int f(TreeNode root) {
         if(root == null) return 0;
-
         int lsum = f(root.left);
         int rsum = f(root.right);
         res += Math.abs(lsum - rsum);
