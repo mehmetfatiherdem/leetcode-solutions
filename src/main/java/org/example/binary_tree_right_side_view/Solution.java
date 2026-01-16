@@ -28,7 +28,6 @@ public class Solution {
                 if(!qu.isEmpty()) qu.add(null);
             }
         }
-
         return list;
     }
 }
