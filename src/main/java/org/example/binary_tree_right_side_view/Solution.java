@@ -20,7 +20,6 @@ public class Solution {
 
             if(root.left != null) qu.add(root.left);
             if(root.right != null) qu.add(root.right);
-
             if(qu.peek() == null) {
                 list.add(root.val);
                 qu.poll();
