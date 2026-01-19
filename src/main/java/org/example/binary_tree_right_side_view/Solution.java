@@ -17,7 +17,6 @@ public class Solution {
 
         while(!qu.isEmpty()) {
             root = qu.poll();
-
             if(root.left != null) qu.add(root.left);
             if(root.right != null) qu.add(root.right);
             if(qu.peek() == null) {
