@@ -19,7 +19,6 @@ public class Solution {
         lmax = Math.max(lmax, 0);
         rmax = Math.max(rmax, 0);
         res = Math.max(res, root.val + lmax + rmax);
-
         return root.val + Math.max(lmax, rmax);
     }
 }
