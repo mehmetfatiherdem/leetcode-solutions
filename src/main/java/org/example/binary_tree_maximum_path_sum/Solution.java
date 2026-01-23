@@ -2,7 +2,6 @@ package org.example.binary_tree_maximum_path_sum;
 import org.example.data_structures.TreeNode;
 
 public class Solution {
-
     int res = Integer.MIN_VALUE ;
     public int maxPathSum(TreeNode root) {
         dfs(root);
