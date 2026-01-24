@@ -7,7 +7,6 @@ public class Solution {
         dfs(root);
         return res;
     }
-
     public int dfs(TreeNode root) {
         if(root == null) return 0;
         int lmax = dfs(root.left);
