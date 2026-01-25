@@ -9,7 +9,6 @@ public class Solution {
             else if(nums[mid]>target) e = mid-1;
             else if(nums[mid] == target) return mid;
         }
-
         return -1;
     }
 }
