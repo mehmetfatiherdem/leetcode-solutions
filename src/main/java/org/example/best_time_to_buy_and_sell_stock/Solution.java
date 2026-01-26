@@ -10,7 +10,6 @@ public class Solution {
             max = Math.max(max, price - min);
         }
 
-
         return Math.max(max, 0);
     }
 }
