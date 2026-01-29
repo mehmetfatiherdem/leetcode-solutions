@@ -15,7 +15,6 @@ public class Solution {
         }
 
         if(num<0) sb.append("-");
-
         return sb.reverse().toString();
     }
 }
