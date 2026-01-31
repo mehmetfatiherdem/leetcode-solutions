@@ -34,7 +34,6 @@ public class Solution {
 
         }
         li.add(sum/lnum);
-
         return li;
     }
 }
