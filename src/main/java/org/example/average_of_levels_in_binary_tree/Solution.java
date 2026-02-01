@@ -31,7 +31,6 @@ public class Solution {
             if(nl == null) {
                 nl = root.left == null ? root.right:root.left;
             }
-
         }
         li.add(sum/lnum);
         return li;
