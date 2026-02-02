@@ -28,9 +28,8 @@ public class Solution {
             }
             if(root.left != null) q.add(root.left);
             if(root.right != null) q.add(root.right);
-            if(nl == null) {
-                nl = root.left == null ? root.right:root.left;
-            }
+            if(nl == null) nl = root.left == null ? root.right:root.left;
+
         }
         li.add(sum/lnum);
         return li;
