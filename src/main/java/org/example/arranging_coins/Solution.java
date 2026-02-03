@@ -18,7 +18,6 @@ public class Solution {
                 return (int)m;
             }
         }
-
         return (int)r;
     }
 }
