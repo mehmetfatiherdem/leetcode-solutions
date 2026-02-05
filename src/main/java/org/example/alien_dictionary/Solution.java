@@ -14,7 +14,7 @@ public class Solution {
 
     public String foreignDictionary(String[] words) {
 
-        // 1. Initialize Adjacency List and find all unique characters
+        // 1. Initialize the Adjacency List and find all unique characters
         Map<Character, Set<Character>> adj = new HashMap<>();
         for (String word : words) {
             for (char c : word.toCharArray()) {
@@ -29,7 +29,7 @@ public class Solution {
             String w2 = words[i + 1];
             int minLen = Math.min(w1.length(), w2.length());
 
-            // Check for invalid prefix case: "abc" before "ab" is impossible
+            // Check for the invalid prefix case: "abc" before "ab" is impossible
             if (w1.length() > w2.length() && w1.substring(0, minLen).equals(w2.substring(0, minLen))) {
                 return ""; // Invalid order
             }
@@ -73,7 +73,7 @@ public class Solution {
     }
 
     boolean dfs(char node, Map<Character, Integer> visitedState, Map<Character, Set<Character>> adj, StringBuilder result) {
-        // Mark current node as visiting
+        // Mark the current node as visiting
         visitedState.put(node, VISITING);
 
         // Visit all neighbors
@@ -97,7 +97,7 @@ public class Solution {
         }
 
 
-        // Mark current node as fully visited
+        // Mark the current node as fully visited
         visitedState.put(node, VISITED);
         // Append the node to the result (post-order traversal)
         result.append(node);
