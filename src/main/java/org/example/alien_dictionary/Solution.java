@@ -6,7 +6,6 @@ import java.util.Map;
 import java.util.Set;
 
 public class Solution {
-
     // Enum or constants for visited states for clarity
     private static final int UNVISITED = 0;
     private static final int VISITING = 1;
