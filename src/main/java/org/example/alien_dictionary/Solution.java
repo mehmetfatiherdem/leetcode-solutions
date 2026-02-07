@@ -12,7 +12,6 @@ public class Solution {
     private static final int VISITED = 2;
 
     public String foreignDictionary(String[] words) {
-
         // 1. Initialize the Adjacency List and find all unique characters
         Map<Character, Set<Character>> adj = new HashMap<>();
         for (String word : words) {
