@@ -29,8 +29,6 @@ public class Solution {
 
             // Check for the invalid prefix case: "abc" before "ab" is impossible
             if (w1.length() > w2.length() && w1.substring(0, minLen).equals(w2.substring(0, minLen))) return ""; // Invalid order
-
-
             // Find the first differing character to establish an edge
             for (int j = 0; j < minLen; j++) {
                 char char1 = w1.charAt(j);
