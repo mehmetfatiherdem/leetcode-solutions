@@ -5,18 +5,14 @@ import java.util.Map;
 
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> m = new HashMap<>();
-        int[] pair = new int[2];
-        for(int i = 0; i<nums.length; i++){
-            if(m.get(target - nums[i]) == null){
-                m.put(nums[i], i);
-                continue;
+        Map<Integer, Integer> numToIndex = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (numToIndex.containsKey(complement)) {
+                return new int[]{numToIndex.get(complement), i};
             }
-
-            pair[0] = m.get(target - nums[i]);
-            pair[1] = i;
+            numToIndex.put(nums[i], i);
         }
-
-        return pair;
+        return new int[0];
     }
 }
