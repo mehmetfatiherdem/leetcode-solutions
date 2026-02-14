@@ -9,7 +9,6 @@ public class Solution {
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
             if (numToIndex.containsKey(complement)) return new int[]{numToIndex.get(complement), i};
-
             numToIndex.put(nums[i], i);
         }
         return new int[0];
