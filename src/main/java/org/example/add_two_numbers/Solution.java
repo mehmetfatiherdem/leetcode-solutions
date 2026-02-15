@@ -9,8 +9,7 @@ public class Solution {
         int cin = 0;
         while (l1.next != null && l2.next != null) {
             int s = l1.val + l2.val + cin;
-            int d = s % 10;
-            th.val = d;
+            th.val = s % 10;
             cin = s / 10;
             l1 = l1.next;
             l2 = l2.next;
