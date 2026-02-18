@@ -39,8 +39,7 @@ public class Solution {
             th.next = new ListNode(0);
             th = th.next;
             int s = l2.val + cin;
-            int d = s % 10;
-            th.val = d;
+            th.val = s % 10;
             cin = s / 10;
             l2 = l2.next;
         }
