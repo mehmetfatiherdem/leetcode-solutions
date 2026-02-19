@@ -44,9 +44,7 @@ public class Solution {
             l2 = l2.next;
         }
 
-        if (cin > 0) {
-            th.next = new ListNode(cin);
-        }
+        if (cin > 0) th.next = new ListNode(cin);
 
         return h;
     }
