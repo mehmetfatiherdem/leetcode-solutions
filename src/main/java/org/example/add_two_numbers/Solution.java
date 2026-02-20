@@ -7,6 +7,7 @@ public class Solution {
         ListNode h = new ListNode(0);
         ListNode th = h;
         int cin = 0;
+
         while (l1.next != null && l2.next != null) {
             int s = l1.val + l2.val + cin;
             th.val = s % 10;
