@@ -10,8 +10,7 @@ public class Solution {
 
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
-                if (dfs(board, set, i, j, word, 0))
-                    return true;
+                if (dfs(board, set, i, j, word, 0)) return true;
             }
         }
         return false;
