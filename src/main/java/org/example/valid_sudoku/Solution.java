@@ -23,9 +23,8 @@ public class Solution {
                 char value = board[r][c];
                 int boxIndex = (r / 3) * 3 + (c / 3);
 
-                if (rows[r].contains(value) || cols[c].contains(value) || boxes[boxIndex].contains(value)) {
-                    return false;
-                }
+                if (rows[r].contains(value) || cols[c].contains(value) || boxes[boxIndex].contains(value)) return false;
+
 
                 rows[r].add(value);
                 cols[c].add(value);
