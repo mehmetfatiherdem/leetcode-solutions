@@ -25,7 +25,6 @@ public class Solution {
 
                 if (rows[r].contains(value) || cols[c].contains(value) || boxes[boxIndex].contains(value)) return false;
 
-
                 rows[r].add(value);
                 cols[c].add(value);
                 boxes[boxIndex].add(value);
