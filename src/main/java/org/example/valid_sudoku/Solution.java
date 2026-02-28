@@ -16,9 +16,7 @@ public class Solution {
 
         for (int r = 0; r < 9; r++) {
             for (int c = 0; c < 9; c++) {
-                if (board[r][c] == '.') {
-                    continue;
-                }
+                if (board[r][c] == '.') continue;
 
                 char value = board[r][c];
                 int boxIndex = (r / 3) * 3 + (c / 3);
