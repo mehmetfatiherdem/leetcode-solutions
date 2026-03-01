@@ -10,9 +10,7 @@ public class Solution {
                 r = mid-1;
             } else if(mid*mid < num) {
                 l = mid+1;
-            } else {
-                return true;
-            }
+            } else return true;
         }
 
         return false;
