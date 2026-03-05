@@ -16,9 +16,8 @@ public class Solution {
                 para.pop();
             }else if( c == '}' && !para.isEmpty() && para.peek() == '{' ){
                 para.pop();
-            }else if( c == ']' && !para.isEmpty() &&  para.peek() == '[' ){
-                para.pop();
-            }else return false;
+            }else if( c == ']' && !para.isEmpty() &&  para.peek() == '[' ) para.pop();
+            else return false;
         }
         return para.isEmpty();
     }
