@@ -12,9 +12,8 @@ public class Solution {
         for(char c : s.toCharArray()){
             if(c == '(' || c == '{' || c == '['){
                 para.push(c);
-            }else if( c == ')' && !para.isEmpty() && para.peek() == '(' ){
-                para.pop();
-            }else if( c == '}' && !para.isEmpty() && para.peek() == '{' ) para.pop();
+            }else if( c == ')' && !para.isEmpty() && para.peek() == '(' ) para.pop();
+            else if( c == '}' && !para.isEmpty() && para.peek() == '{' ) para.pop();
             else if( c == ']' && !para.isEmpty() &&  para.peek() == '[' ) para.pop();
             else return false;
         }
