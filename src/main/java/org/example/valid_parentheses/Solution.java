@@ -4,9 +4,7 @@ import java.util.Stack;
 
 public class Solution {
     public boolean isValid(String s) {
-        if(s.length() % 2 != 0){
-            return false;
-        }
+        if(s.length() % 2 != 0) return false;
 
         Stack <Character> para = new Stack<>();
         for(char c : s.toCharArray()){
