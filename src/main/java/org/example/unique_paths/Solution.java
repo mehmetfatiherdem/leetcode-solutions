@@ -6,9 +6,7 @@ public class Solution {
         for(int y = 0; y < m; y++) {
             dp[y][0] = 1;
         }
-        for(int x = 0; x < n; x++) {
-            dp[0][x] = 1;
-        }
+        for(int x = 0; x < n; x++) dp[0][x] = 1;
 
         for(int i = 1; i<m; i++) {
             for(int j = 1; j<n; j++) {
