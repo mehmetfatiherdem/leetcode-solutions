@@ -7,9 +7,8 @@ public class Solution {
         while(l<r){
             int total = numbers[l] +numbers[r];
 
-            if(total == target){
-                return new int[]{l+1,r+1};
-            }
+            if(total == target) return new int[]{l+1,r+1};
+
             else if(total > target) r--;
 
             else l++;
