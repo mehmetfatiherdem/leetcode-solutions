@@ -9,7 +9,6 @@ public class Solution {
 
             if(total == target) return new int[]{l+1,r+1};
             else if(total > target) r--;
-
             else l++;
         }
         return new int[]{-1,-1};
