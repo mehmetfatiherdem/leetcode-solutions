@@ -16,7 +16,6 @@ public class Solution {
                 sum+=lmax-height[lp];
             }
         }
-
         return sum;
     }
 }
