@@ -5,7 +5,8 @@ public class Solution {
         int n = height.length;
         int lp = 0;
         int rp = n-1;
-        int lmax = height[lp], rmax = height[rp];
+        int lmax = height[lp];
+        int rmax = height[rp];
         int sum = 0;
         while(lp<rp) {
             if(lmax>rmax) {
