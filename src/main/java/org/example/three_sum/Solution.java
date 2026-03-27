@@ -30,9 +30,8 @@ public class Solution {
 
                     left++;
                     right--;
-                } else if (sum < target) {
-                    left++;
-                } else {
+                } else if (sum < target) left++;
+                else {
                     right--;
                 }
             }
