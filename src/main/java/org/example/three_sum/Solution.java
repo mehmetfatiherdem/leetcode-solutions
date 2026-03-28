@@ -31,9 +31,7 @@ public class Solution {
                     left++;
                     right--;
                 } else if (sum < target) left++;
-                else {
-                    right--;
-                }
+                else right--;
             }
         }
 
