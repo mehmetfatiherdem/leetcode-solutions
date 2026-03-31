@@ -6,7 +6,6 @@ public class Solution {
       TreeNode left;
       TreeNode right;
       TreeNode() {}
-      TreeNode(int val) { this.val = val; }
   }
     public int sumOfLeftLeaves(TreeNode root) {
         return dfs(root, false);
