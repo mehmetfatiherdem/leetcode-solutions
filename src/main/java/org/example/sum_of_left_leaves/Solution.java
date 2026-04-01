@@ -13,9 +13,7 @@ public class Solution {
     }
     public int dfs(TreeNode root, boolean isLeft) {
         if(root == null) return 0;
-        if(root.left == null && root.right == null) {
-            return isLeft ? root.val:0;
-        }
+        if(root.left == null && root.right == null) return isLeft ? root.val:0;
         int l = dfs(root.left, true);
         int r = dfs(root.right, false);
         return l + r;
