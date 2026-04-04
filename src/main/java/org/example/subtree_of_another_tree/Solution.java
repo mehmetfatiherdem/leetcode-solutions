@@ -22,7 +22,6 @@ public class Solution {
         if(root != null && subRoot != null && root.val == subRoot.val) {
             return sameTree(root.left, subRoot.left) && sameTree(root.right, subRoot.right);
         }
-
         return false;
     }
 }
