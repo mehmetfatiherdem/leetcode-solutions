@@ -19,9 +19,7 @@ public class Solution {
 
     public boolean sameTree(TreeNode root, TreeNode subRoot) {
         if(root == null && subRoot == null) return true;
-        if(root != null && subRoot != null && root.val == subRoot.val) {
-            return sameTree(root.left, subRoot.left) && sameTree(root.right, subRoot.right);
-        }
+        if(root != null && subRoot != null && root.val == subRoot.val) return sameTree(root.left, subRoot.left) && sameTree(root.right, subRoot.right);
         return false;
     }
 }
