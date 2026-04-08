@@ -13,7 +13,6 @@ public class Solution {
         if(sameTree(root, subRoot)) return true;
 
         return isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
-
     }
 
     public boolean sameTree(TreeNode root, TreeNode subRoot) {
