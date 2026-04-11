@@ -10,7 +10,6 @@ public class Solution {
         if(subRoot == null) return true;
         if(root == null) return false;
         if(sameTree(root, subRoot)) return true;
-
         return isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
     }
 
