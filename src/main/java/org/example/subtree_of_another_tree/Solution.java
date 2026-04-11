@@ -1,11 +1,8 @@
 package org.example.subtree_of_another_tree;
 
+import org.example.data_structures.TreeNode;
+
 public class Solution {
-    class TreeNode {
-        int val;
-        TreeNode right;
-        TreeNode left;
-    }
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {
         if(subRoot == null) return true;
         if(root == null) return false;
