@@ -28,6 +28,5 @@ public class Solution {
             f(li, cl, nums, i + 1);
             cl.remove(cl.size() - 1);
         }
-
     }
 }
