@@ -22,8 +22,7 @@ public class Solution {
             return;
 
         for (int i = start; i < nums.length; i++) {
-            if (i > start && nums[i] == nums[i - 1])
-                continue;
+            if (i > start && nums[i] == nums[i - 1]) continue;
             cl.add(nums[i]);
             f(li, cl, nums, i + 1);
             cl.remove(cl.size() - 1);
