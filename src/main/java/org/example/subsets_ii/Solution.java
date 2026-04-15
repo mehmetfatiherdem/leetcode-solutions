@@ -11,7 +11,6 @@ public class Solution {
         Arrays.sort(nums);
         f(li, new ArrayList<>(), nums, 0);
         return li;
-
     }
 
     public void f(List<List<Integer>> li, List<Integer> cl, int[] nums, int start) {
