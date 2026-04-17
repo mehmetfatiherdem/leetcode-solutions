@@ -6,7 +6,6 @@ import java.util.List;
 
 public class Solution {
     public List<List<Integer>> subsetsWithDup(int[] nums) {
-
         List<List<Integer>> li = new ArrayList<>();
         Arrays.sort(nums);
         f(li, new ArrayList<>(), nums, 0);
