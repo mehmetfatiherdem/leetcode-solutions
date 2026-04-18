@@ -16,7 +16,6 @@ public class Solution {
         li.add(new ArrayList<>(cl));
 
         if (start == nums.length) return;
-
         for (int i = start; i < nums.length; i++) {
             if (i > start && nums[i] == nums[i - 1]) continue;
             cl.add(nums[i]);
