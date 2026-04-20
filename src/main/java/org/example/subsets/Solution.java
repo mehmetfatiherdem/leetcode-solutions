@@ -15,7 +15,6 @@ public class Solution {
             li.add(new ArrayList<>(ss));
             return;
         }
-
         ss.add(nums[i]);
         subsets(nums, li, ss, i+1);
         ss.remove(ss.size()-1);
