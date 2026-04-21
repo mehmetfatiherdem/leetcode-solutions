@@ -13,9 +13,7 @@ public class Solution {
             else if(c == 'L') {
                 cc++;
 
-            } else {
-                cc = 0;
-            }
+            } else cc = 0;
             lc = Math.max(lc,cc);
         }
         return ac<2 & lc<3;
