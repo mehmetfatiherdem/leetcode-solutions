@@ -12,7 +12,6 @@ public class Solution {
             }
             else if(c == 'L') {
                 cc++;
-
             } else cc = 0;
             lc = Math.max(lc,cc);
         }
