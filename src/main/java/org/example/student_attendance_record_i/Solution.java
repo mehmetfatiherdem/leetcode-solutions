@@ -10,9 +10,8 @@ public class Solution {
                 ac++;
                 cc = 0;
             }
-            else if(c == 'L') {
-                cc++;
-            } else cc = 0;
+            else if(c == 'L') cc++;
+            else cc = 0;
             lc = Math.max(lc,cc);
         }
         return ac<2 & lc<3;
