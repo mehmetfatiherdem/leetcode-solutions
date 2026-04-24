@@ -56,7 +56,6 @@ public class Solution {
                     break;
             }
         }
-
         return li;
     }
 }
