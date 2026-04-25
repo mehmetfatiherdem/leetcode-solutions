@@ -46,9 +46,8 @@ public class Solution {
                     break;
 
                 case LEFT:
-                    for(int i = r-1; i>=l; i--) {
-                        li.add(matrix[row][i]);
-                    }
+                    for(int i = r-1; i>=l; i--) li.add(matrix[row][i]);
+
                     row = d-1;
                     col = l;
                     d--;
