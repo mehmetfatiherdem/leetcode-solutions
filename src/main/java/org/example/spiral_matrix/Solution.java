@@ -36,9 +36,8 @@ public class Solution {
                     break;
 
                 case DOWN:
-                    for(int i = u; i<d; i++) {
-                        li.add(matrix[i][col]);
-                    }
+                    for(int i = u; i<d; i++) li.add(matrix[i][col]);
+
                     row = d-1;
                     col = r-1;
                     r--;
