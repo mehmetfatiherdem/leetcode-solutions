@@ -26,9 +26,8 @@ public class Solution {
                     break;
 
                 case RIGHT:
-                    for(int i = l; i<r; i++) {
-                        li.add(matrix[row][i]);
-                    }
+                    for(int i = l; i<r; i++) li.add(matrix[row][i]);
+
                     row = u;
                     col = r-1;
                     u++;
