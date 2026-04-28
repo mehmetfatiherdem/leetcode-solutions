@@ -16,9 +16,8 @@ public class Solution {
         while(li.size()<(matrix.length * matrix[0].length)) {
             switch(currDir) {
                 case UP:
-                    for(int i = d-1; i>=u; i--) {
-                        li.add(matrix[i][col]);
-                    }
+                    for(int i = d-1; i>=u; i--) li.add(matrix[i][col]);
+
                     row = u;
                     col = l;
                     l++;
