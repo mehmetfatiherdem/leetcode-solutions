@@ -11,7 +11,6 @@ public class Solution {
         int u = 0, r = matrix[0].length, d = matrix.length, l = 0;
         Direction currDir = Direction.RIGHT;
         List<Integer> li = new ArrayList<>();
-
         int row = 0, col = 0;
         while(li.size()<(matrix.length * matrix[0].length)) {
             switch(currDir) {
