@@ -33,6 +33,5 @@ public class Solution {
         if(rowZero) {
             Arrays.fill(matrix[0], 0);
         }
-
     }
 }
