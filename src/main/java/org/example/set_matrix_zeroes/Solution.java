@@ -30,8 +30,6 @@ public class Solution {
                 matrix[i][0] = 0;
             }
         }
-        if(rowZero) {
-            Arrays.fill(matrix[0], 0);
-        }
+        if(rowZero) Arrays.fill(matrix[0], 0);
     }
 }
