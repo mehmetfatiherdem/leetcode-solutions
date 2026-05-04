@@ -19,9 +19,7 @@ public class Solution {
 
         for(int i = 1; i<matrix.length; i++) {
             for(int j = 1; j<matrix[0].length; j++) {
-                if(matrix[0][j] == 0 || matrix[i][0] == 0) {
-                    matrix[i][j] = 0;
-                }
+                if(matrix[0][j] == 0 || matrix[i][0] == 0) matrix[i][j] = 0;
             }
         }
 
