@@ -23,7 +23,6 @@ public class Solution {
             t = t/10;
 
         }
-
         return true;
     }
 }
