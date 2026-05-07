@@ -8,7 +8,6 @@ import java.util.Queue;
 
 public class Solution {
 
-
     public String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();
         serializer(root, sb);
