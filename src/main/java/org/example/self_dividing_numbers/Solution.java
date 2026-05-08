@@ -21,7 +21,6 @@ public class Solution {
         while(t>0) {
             if(t%10 == 0 || num%(t%10)!=0) return false;
             t = t/10;
-
         }
         return true;
     }
