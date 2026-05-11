@@ -12,7 +12,6 @@ public class Solution {
             if(dv(left)) li.add(left);
             left++;
         }
-
         return li;
     }
 
